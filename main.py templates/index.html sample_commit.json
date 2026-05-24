@@ -1,0 +1,5 @@
+{
+  "file": "auth/login.py",
+  "change": "Removed password validation",
+  "author": "dev-user"
+}
