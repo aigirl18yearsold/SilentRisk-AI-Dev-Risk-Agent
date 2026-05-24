@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SilentRisk AI</title>
+</head>
+<body style="font-family: Arial; padding: 40px;">
+
+<h1>SilentRisk AI – Dev Risk Agent</h1>
+
+<h2>Incoming Commit</h2>
+<p><b>File:</b> {{commit.file}}</p>
+<p><b>Change:</b> {{commit.change}}</p>
+
+<h2>AI Risk Analysis</h2>
+<p><b>Risk Level:</b> {{risk.level}}</p>
+<p>{{risk.problem}}</p>
+
+<h2>Automatic GitLab Issue</h2>
+<p><b>{{issue.title}}</b></p>
+<p>Severity: {{issue.severity}}</p>
+<p>Status: {{issue.status}}</p>
+
+<h2>Suggested Fix</h2>
+<p>{{risk.fix}}</p>
+
+</body>
+</html>
