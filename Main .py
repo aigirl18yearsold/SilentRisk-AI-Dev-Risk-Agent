@@ -5,8 +5,8 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    with open("sample_commit.json") as f:
-        commit = json.load(f)
+    with open("sample_commit.json", "r", encoding="utf-8") as file:
+        commit = json.load(file)
 
     risk = {
         "level": "HIGH",
@@ -27,4 +27,5 @@ def home():
         issue=issue
     )
 
-app.run(host="0.0.0.0", port=81)
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=81, debug=False)
